@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   name: myapp-deployment
   labels:
-    app: myapp
-    type: front-end
+    tier: frontend
+    app: ngnix
 spec:
-  template:
-    metadata:
-      name: myapp-pod
-      labels:
-        app: myapp
-        type: front-end
-    spec:
-      containers:
-        - name: ngnix-container
-          image: ngnix
-  replicas: 3
   selector:
     matchLabels:
-      type: front-end
+      app: myapp
+  replicas: 4    
+  template:
+    metadata:
+      name: nginx-2
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: ngnix
+          image: ngnix
+
 
 
 
