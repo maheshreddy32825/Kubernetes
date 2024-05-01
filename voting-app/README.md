@@ -1,7 +1,7 @@
 ## 1. login to minikube ##
 ```
 kubectl get pods -- to see any running pods
-git clone url
+git clone https://github.com/maheshreddy32825/Kubernetes/tree/main/voting-app
 cd voting-app
 ls -la
 ```
