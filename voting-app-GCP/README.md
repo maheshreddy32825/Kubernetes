@@ -1,4 +1,5 @@
-# Setting up Voting Application on GCP
+# Setting up Voting Application on Cloud
+
 ## 1. Create kubernetes cluster on GCP ##
 ```
 Login to GCP https://console.cloud.google.com
